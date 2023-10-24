@@ -7,7 +7,12 @@ const ProjectCard = ({ project }) => {
         <div className='card-body'>
           <div className='d-flex justify-content-between align-items-center mb-4'>
             <h5 className='card-title'>{project.name}</h5>
-            <a href={`/projects/${project.id}`}>View</a>
+            <a
+              className='btn btn-primary rounded-0'
+              href={`/projects/${project.id}`}
+            >
+              View
+            </a>
           </div>
           <p className='small'>{project.status}</p>
         </div>
