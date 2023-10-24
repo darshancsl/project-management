@@ -26,7 +26,7 @@ const cache = new InMemoryCache({
 });
 
 const client = new ApolloClient({
-  uri: "https://project-management-api-rj8i.onrender.com/graphql",
+  uri: "https://project-management-api-rj8i.onrender.com/graphql/",
   cache,
 });
 
@@ -38,7 +38,7 @@ function App() {
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/projects/:id' element={<Project />} />
+            <Route path='projects/:id' element={<Project />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </main>
